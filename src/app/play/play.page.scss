@@ -1,0 +1,33 @@
+ion-content{
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 16px;
+  --padding-bottom: 16px; 
+  text-align: center;
+}
+ion-col{
+    ion-icon{
+        height: 60px;
+        width: 60px;
+    }
+    height: 80px;
+    border: 4px solid beige;
+    color: black;
+}
+.player1{
+    padding: 8px;
+    height: 30px;
+    width: 150px;
+    --background: Green;
+    color: white;
+
+}
+
+.player2{
+     padding: 8px;
+    height: 30px;
+    width: 150px;
+    --background: blue;
+    color: white;
+
+}
