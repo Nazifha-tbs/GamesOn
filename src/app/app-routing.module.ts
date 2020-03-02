@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'play',
     loadChildren: () => import('./play/play.module').then( m => m.PlayPageModule)
   },
+  {
+    path: 'quiz',
+    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizPageModule)
+  },
 ];
 
 @NgModule({

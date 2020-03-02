@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Quiz</ion-title>
+    <ion-text class="score" slot="end">Your Score : {{score}} / {{total}}</ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-card class="que">
+      <ion-label *ngIf="index<  10">
+        {{ index +1}} )
+      </ion-label>
+      <ion-text>
+        {{question}}
+      </ion-text>
+    </ion-card>
+
+    <div *ngFor="let opt of options ;let i = index;" style="width: 350px;  max-height: 50px !important;">
+      <div id="selectedAns{{index}}{{i}}" (click)="selected(i)" lines="none" class="opt">
+        {{opt.option}}
+      </div>
+    </div>
+    <ion-button id="next" (click)="next()">
+      Next
+    </ion-button>
+  </div>
+</ion-content>
