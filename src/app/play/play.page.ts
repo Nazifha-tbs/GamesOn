@@ -89,7 +89,11 @@ export class PlayPage implements OnInit {
         else if (this.rows[2].name == 'close' && this.rows[5].name == 'close' && this.rows[8].name == 'close' || this.rows[2].name == 'radio-button-off' && this.rows[5].name == 'radio-button-off' && this.rows[8].name == 'radio-button-off') {
           this.showAlert(this.rows[2].name);
           console.log(' right |');
-        } else {
+        }  else if (this.rows[1].name == 'close' && this.rows[4].name == 'close' && this.rows[7].name == 'close' || this.rows[1].name == 'radio-button-off' && this.rows[4].name == 'radio-button-off' && this.rows[7].name == 'radio-button-off') {
+          this.showAlert(this.rows[1].name);
+          console.log(' middle |');
+        }
+        else {
           console.log('Do nothing');
         }
 
